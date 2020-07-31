@@ -54,41 +54,57 @@
 
 .container {
     width: 100%;
-    min-height: 100vh;
     position: relative;
 }
 
 .box {
-    height: 900px;
-    padding: 5px;
-    float: left;
+    float: left; 
+    border: 0;
+    margin: 0;
 }
 
 .one {
+    min-height: calc(100vh - 220px);
     background-color: #EE82EE;
     width: 20%;
+    /*position: absolute;*/
+
 }
 
 .second {
     width: 60%;
+    min-height: calc(100vh - 220px);
+    /*position: absolute;
+    left: 20%;*/
 }
 
 .third {
+    min-height: calc(100vh - 220px);
     width: 20%;
     background-color: #9ACD32;
+    /*position: absolute;
+    left: 80%;*/
 }
 
 .item img {
-    float: right;
+    float: left ;
     width: 100px;
-    height: 100px;
+    height: 120px;
+    margin: 10px;
+    clear: right;
 }
+
+.item p {
+    margin-left: 125px;
+}
+
 .item {
     float: left;
-    width: 250px;
-    height: 250px;
-    padding: 10px;
-    margin: 15px;
+    width: 45%;
+    min-width: 250px;
+    overflow: visible;
+    min-height: 250px;
+    margin: 10px;
     font-size: medium;
     background-color: lightblue;
     border: 1px solid lightblue;
@@ -109,7 +125,8 @@
     text-align: center;
     color: white;   
     width: 100%;
-    position: absolute;
+    /*position: absolute;
+    bottom: 0;*/
 }
 
 .footer-site li {
